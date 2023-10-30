@@ -19,25 +19,36 @@ requestAnimationFrame(raf);
 
 // GSAP Scroll Trigger
 gsap.to(".cookie", {
-  scale: 2,
+  scale: 2.3,
   scrollTrigger: {
-    trigger: ".cookie-1",
-    start: "top 60%",
+    trigger: ".trigger-element",
+    start: "top center",
     end: "bottom top",
     scrub: true,
   },
 });
 
 gsap.to(".title", {
-  scale: 0.5,
+  translateY: "-195",
+  scale: 0.3,
   scrollTrigger: {
-    trigger: ".cookie-1",
+    trigger: ".trigger-element",
     start: "top center",
-    end: "bottom 30%",
-    markers: true,
+    end: "top top",
     scrub: true,
   },
 });
+
+gsap.to(".header-nav", {
+  backgroundColor: "#1c3818",
+  scrollTrigger: {
+    trigger: ".trigger-element",
+    start: "top center",
+    end: "top top",
+    scrub: true,
+  },
+});
+
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
 

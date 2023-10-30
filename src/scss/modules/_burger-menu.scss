@@ -23,7 +23,7 @@ button {
   height: 100%;
   background: var(--dark-green);
   transition: 0.5s ease;
-  z-index: 2;
+  z-index: 4;
 }
 
 .burger-menu-nav ul li {
@@ -102,12 +102,13 @@ button {
   visibility: hidden;
   pointer-events: none;
   transition: 0.5s ease-in-out;
-  z-index: 1;
+  z-index: 3;
 }
 
 .burger-background.active {
   visibility: visible;
   backdrop-filter: blur(0.8px);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 // Infos

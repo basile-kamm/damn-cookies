@@ -52,3 +52,23 @@ body {
   color: var(--light);
   font-family: modesto-text, serif;
 }
+
+.trigger-element {
+  position: absolute;
+  top: 50vh;
+  display: none;
+}
+
+main {
+  background-image: url(../img/main-background.jpg);
+  background-size: contain;
+  height: 300vh;
+  position: relative;
+}
+
+.background-top {
+  position: absolute;
+  top: 0;
+  transform-origin: bottom center;
+  transform: translateY(-99%);
+}

@@ -5,30 +5,32 @@ body {
 header {
   background-image: url(../img/header-banner.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 105vh;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
 .header-nav {
-  background: var(--dark-green);
+  background: none;
   position: fixed;
   height: 60px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
-  transition: 0.5s ease-in-out;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 100px;
   position: fixed;
   width: 800px;
   margin-left: -400px;
   left: 50%;
   transform-origin: center top;
+  margin-top: 200px;
+  padding-top: 15px;
+  scale: 0.6;
 }
 
 .header-subtitle {
@@ -53,7 +55,7 @@ h1 {
 @media (min-width: 750px) {
   .cookie-1 {
     position: absolute;
-    bottom: -10%;
+    bottom: -15%;
     left: -10%;
     transform-origin: bottom left;
     width: 30%;
@@ -61,7 +63,7 @@ h1 {
 
   .cookie-2 {
     position: absolute;
-    bottom: -10%;
+    bottom: -15%;
     right: -10%;
     transform-origin: bottom right;
     width: 30%;
@@ -74,11 +76,16 @@ h1 {
     margin-left: -800px;
     left: 50%;
   }
+
+  header {
+    margin-bottom: 8vh;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 950px) {
   h1 {
-    font-size: 80px;
+    font-size: 110px;
+    scale: 0.5;
   }
 }
 
