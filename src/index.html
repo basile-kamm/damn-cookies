@@ -2,13 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Damn cookies !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="https://use.typekit.net/xjf1pif.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
-
+    <header>
+      <nav class="header-nav">
+        <h1 class="title">Damn Cookies !</h1>
+        <div class="burger-menu">
+          <button class="hamburger">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </button>
+          <nav class="burger-menu-nav">
+            <ul>
+              <li><a href="">Facts</a></li>
+              <li><a href="">Receipe</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+            <div class="burger-menu-infos">
+              <p class="burger-menu-title">Damn Cookies !</p>
+              <p class="burger-menu-info">an experimental website from</p>
+              <p class="burger-menu-author">
+                <span class="smaller">©</span> Basile Kamm 2023
+              </p>
+            </div>
+          </nav>
+        </div>
+        <div class="burger-background"></div>
+      </nav>
+      <p class="header-subtitle">A website about cookies in all it’s forms</p>
+      <img
+        src="img/cookie.png"
+        alt="Photo d'un cookie"
+        class="cookie cookie-1"
+      />
+      <img
+        src="img/cookie.png"
+        alt="Photo d'un cookie"
+        class="cookie cookie-2"
+      />
+    </header>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

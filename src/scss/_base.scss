@@ -3,6 +3,10 @@
 // ==================================== */
 
 :root {
+  --light: #fff4cf;
+  --dark-green: #1c3818;
+  --light-green: #84ad5f;
+  --brown: #301c09;
 }
 
 /* ====================================
@@ -26,6 +30,7 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  overflow: hidden;
 }
 
 a {
@@ -42,3 +47,8 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+body {
+  color: var(--light);
+  font-family: modesto-text, serif;
+}

@@ -1,0 +1,92 @@
+body {
+  height: 300vh;
+}
+
+header {
+  background-image: url(../img/header-banner.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-nav {
+  background: var(--dark-green);
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 45px;
+  position: fixed;
+  width: 800px;
+  margin-left: -400px;
+  left: 50%;
+  transform-origin: center top;
+}
+
+.header-subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  width: 90%;
+  margin: auto;
+  margin-top: 50vh;
+}
+
+.cookie-1 {
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  width: 110%;
+}
+
+.cookie-2 {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .cookie-1 {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    transform-origin: bottom left;
+    width: 30%;
+  }
+
+  .cookie-2 {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    transform-origin: bottom right;
+    width: 30%;
+    display: block;
+  }
+
+  h1 {
+    font-size: 130px;
+    width: 1600px;
+    margin-left: -800px;
+    left: 50%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 950px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  .cookie-1 {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+  }
+}
