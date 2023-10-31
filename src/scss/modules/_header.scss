@@ -78,7 +78,7 @@ h1 {
   }
 
   header {
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
   }
 }
 
@@ -96,4 +96,10 @@ h1 {
     left: 0;
     width: 100%;
   }
+}
+
+.trigger-element {
+  position: absolute;
+  top: 50vh;
+  display: none;
 }

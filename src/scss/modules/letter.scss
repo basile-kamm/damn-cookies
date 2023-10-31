@@ -1,0 +1,101 @@
+.letter {
+  position: relative;
+}
+
+.absolute-letter {
+  position: absolute;
+  right: -90%;
+  top: 500px;
+  width: inherit;
+  height: inherit;
+  rotate: -20deg;
+  scale: 0.5;
+  animation: ease-in-out;
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .absolute-letter {
+    scale: 0.7;
+    right: -90%;
+  }
+}
+
+.open-letter {
+  position: relative;
+  display: none;
+}
+
+.open-letter.open {
+  display: block;
+}
+
+.closed-letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.closed-letter.closed {
+  display: none;
+}
+
+.front-letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.back-letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.paper-letter {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 330px;
+  width: 355px;
+  transform-origin: bottom left;
+  z-index: 1;
+  text-align: center;
+  font-weight: 500;
+  color: var(--dark-green);
+  font-family: playfair-display, serif;
+}
+
+.text-letter {
+  position: relative;
+}
+
+.text-letter h3 {
+  position: absolute;
+  font-size: 28px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.text-letter p {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  z-index: 1;
+  width: 240px;
+  line-height: 20px;
+}
+
+.paper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  width: 355px;
+  z-index: -1;
+}

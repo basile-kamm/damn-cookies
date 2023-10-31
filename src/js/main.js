@@ -51,11 +51,34 @@ gsap.to(".header-nav", {
 
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
+const background = document.querySelector(".burger-background");
 
 hamburger.addEventListener("click", show);
+background.addEventListener("click", show);
 
 function show() {
   hamburger.classList.toggle("open");
   document.querySelector(".burger-menu").classList.toggle("active");
-  document.querySelector(".burger-background").classList.toggle("active");
+  background.classList.toggle("active");
 }
+
+//Letter
+const letter = document.querySelector(".absolute-letter");
+
+letter.addEventListener("click", open);
+
+function open() {
+  document.querySelector(".closed-letter").classList.toggle("closed");
+  document.querySelector(".open-letter").classList.toggle("open");
+}
+
+gsap.to(".absolute-letter", {
+  x: "-35%",
+  scrollTrigger: {
+    trigger: ".so-what",
+    start: "bottom center",
+    end: "bottom 30%",
+    scrub: true,
+    markers: true,
+  },
+});

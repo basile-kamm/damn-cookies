@@ -53,12 +53,6 @@ body {
   font-family: modesto-text, serif;
 }
 
-.trigger-element {
-  position: absolute;
-  top: 50vh;
-  display: none;
-}
-
 main {
   background-image: url(../img/main-background.jpg);
   background-size: contain;
@@ -71,4 +65,5 @@ main {
   top: 0;
   transform-origin: bottom center;
   transform: translateY(-99%);
+  width: 100%;
 }

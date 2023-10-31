@@ -44,7 +44,7 @@ button {
 
 .hamburger {
   display: block;
-  top: 4%;
+  top: 35px;
   right: 4%;
   width: 30px;
   height: 30px;
@@ -100,7 +100,6 @@ button {
   top: 0;
   position: fixed;
   visibility: hidden;
-  pointer-events: none;
   transition: 0.5s ease-in-out;
   z-index: 3;
 }
