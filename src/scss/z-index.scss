@@ -1,0 +1,23 @@
+main {
+  z-index: 0;
+}
+
+header {
+  z-index: 0;
+}
+
+.header-nav {
+  z-index: 1000;
+}
+
+.burger-menu {
+  z-index: 4;
+}
+
+.burger-background {
+  z-index: 3;
+}
+
+.card .background {
+  z-index: -1;
+}

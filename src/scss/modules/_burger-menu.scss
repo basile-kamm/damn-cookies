@@ -23,7 +23,6 @@ button {
   height: 100%;
   background: var(--dark-green);
   transition: 0.5s ease;
-  z-index: 4;
 }
 
 .burger-menu-nav ul li {
@@ -101,7 +100,6 @@ button {
   position: fixed;
   visibility: hidden;
   transition: 0.5s ease-in-out;
-  z-index: 3;
 }
 
 .burger-background.active {

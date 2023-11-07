@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  height: 750px;
+}
+.card-text {
+  padding: 60px 40px;
+}
+
+.card h3 {
+  font-size: 45px;
+  color: var(--light-green);
+}
+
+.card .background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cookie-manager {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.cookie-manager img {
+  max-width: 50%;
+  position: absolute;
+}

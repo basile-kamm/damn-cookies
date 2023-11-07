@@ -18,15 +18,14 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 h1 {
   font-size: 100px;
   position: fixed;
   width: 800px;
-  margin-left: -400px;
   left: 50%;
+  transform: translateX(-50%);
   transform-origin: center top;
   margin-top: 200px;
   padding-top: 15px;
@@ -73,8 +72,6 @@ h1 {
   h1 {
     font-size: 130px;
     width: 1600px;
-    margin-left: -800px;
-    left: 50%;
   }
 
   header {

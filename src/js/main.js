@@ -63,22 +63,22 @@ function show() {
 }
 
 //Letter
-const letter = document.querySelector(".absolute-letter");
+// const letter = document.querySelector(".absolute-letter");
 
-letter.addEventListener("click", open);
+// letter.addEventListener("click", open);
 
-function open() {
-  document.querySelector(".closed-letter").classList.toggle("closed");
-  document.querySelector(".open-letter").classList.toggle("open");
-}
+// function open() {
+//   document.querySelector(".closed-letter").classList.toggle("closed");
+//   document.querySelector(".open-letter").classList.toggle("open");
+// }
 
-gsap.to(".absolute-letter", {
-  x: "-35%",
-  scrollTrigger: {
-    trigger: ".so-what",
-    start: "bottom center",
-    end: "bottom 30%",
-    scrub: true,
-    markers: true,
-  },
-});
+// gsap.to(".absolute-letter", {
+//   x: "-35%",
+//   scrollTrigger: {
+//     trigger: ".so-what",
+//     start: "bottom center",
+//     end: "bottom 30%",
+//     scrub: true,
+//     markers: true,
+//   },
+// });
