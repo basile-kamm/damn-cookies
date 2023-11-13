@@ -82,3 +82,29 @@ function show() {
 //     markers: true,
 //   },
 // });
+
+// Cookies Manager
+
+gsap.to(
+  [
+    ".cookie-manager-c1",
+    ".cookie-manager-c2",
+    ".cookie-manager-c3",
+    ".cookie-manager-c4",
+    ".cookie-manager-c5",
+    ".cookie-manager-c6",
+    ".cookie-manager-c9",
+    ".cookie-manager-c7",
+  ],
+  {
+    scrollTrigger: {
+      trigger: ".cards",
+      markers: true,
+      start: "top 90%",
+      end: "bottom 40%",
+      scrub: 1,
+    },
+    duration: 8,
+    rotate: [40, 40, 10, 20, 20, 10, 40, 10],
+  }
+);
