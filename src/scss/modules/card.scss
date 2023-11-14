@@ -44,60 +44,6 @@
   width: 380px;
 }
 
-@media (max-width: 767px) {
-  .dog-on-card {
-    width: 180px;
-    left: 60px;
-    top: 2px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .card h3 {
-    font-size: 30px;
-  }
-
-  .card p:first-of-type {
-    margin-top: -80px;
-  }
-
-  .card p {
-    font-size: 16px;
-  }
-
-  .card-text {
-    padding: 25px 20px;
-  }
-
-  .card {
-    height: 500px;
-  }
-}
-
-@media (min-width: 992px) {
-  .card p {
-    font-size: 18px;
-    padding: 20px -20px;
-  }
-
-  .card-text {
-    padding: 60px 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .card p {
-    font-size: 23px;
-    line-height: 30px;
-  }
-
-  .card {
-    margin-bottom: 80px;
-  }
-  .card-text {
-    padding: 60px 60px;
-  }
-}
 // Cookies Manager
 .cookie-manager {
   position: relative;
@@ -105,6 +51,7 @@
   height: 200px;
   padding-right: 20px;
   pointer-events: none;
+  transform-origin: top center;
 }
 
 .cookie-manager img {
@@ -160,4 +107,73 @@
   width: 100px;
   top: 0;
   left: 20px;
+}
+
+//media queries
+@media (max-width: 767px) {
+  .dog-on-card {
+    width: 180px;
+    left: 60px;
+    top: 2px;
+  }
+
+  .card p {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card h3 {
+    font-size: 30px;
+  }
+
+  .card p:first-of-type {
+    margin-top: -80px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .card-text {
+    padding: 25px 20px;
+  }
+
+  .card {
+    height: 500px;
+  }
+
+  .cookie-manager {
+    scale: 0.7;
+  }
+}
+
+@media (min-width: 992px) {
+  .card p {
+    font-size: 18px;
+    padding: 20px -20px;
+  }
+
+  .card-text {
+    padding: 60px 30px;
+  }
+
+  .cookie-manager {
+    scale: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .card {
+    margin-bottom: 80px;
+  }
+  .card-text {
+    padding: 60px 60px;
+  }
 }

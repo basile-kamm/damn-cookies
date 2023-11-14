@@ -1,11 +1,5 @@
-#deco {
-  height: 250px;
-  margin-right: 20px;
-  min-width: 25px;
-}
-
 h2 {
-  font-size: 65px;
+  font-size: 55px;
   text-align: center;
 }
 
@@ -19,6 +13,7 @@ h2 {
 .text-section p {
   font-size: 16px;
   font-family: playfair-display, serif;
+  height: inherit;
 }
 
 .top-text {
@@ -39,7 +34,33 @@ h2 {
   margin-top: 0;
 }
 
-@media (min-width: 750px) {
+.deco {
+  margin-right: 20px;
+  height: 150px;
+}
+
+.deco-before {
+  height: 130px;
+}
+
+.cookie-slide .deco {
+  height: 100px;
+}
+
+.cookie-slide .text-section {
+  margin-bottom: 200px;
+}
+
+.slide-top {
+  margin-top: 20px;
+}
+
+.title-text {
+  font-size: 45px;
+  padding: 50px 0 30px;
+}
+
+@media (min-width: 768px) {
   .top-text {
     margin-bottom: 20px;
   }
@@ -67,5 +88,27 @@ h2 {
 
   .bottom-section {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .deco {
+    scale: 1.5;
+  }
+
+  .title-text {
+    font-size: 65px;
+    margin: 100px 0 -80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .deco {
+    scale: 1.2;
+  }
+
+  .title-text {
+    font-size: 75px;
+    margin: 100px 0 -80px;
   }
 }

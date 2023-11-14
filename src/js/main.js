@@ -99,7 +99,6 @@ gsap.to(
   {
     scrollTrigger: {
       trigger: ".cards",
-      markers: true,
       start: "top 90%",
       end: "bottom 40%",
       scrub: 1,
@@ -108,3 +107,12 @@ gsap.to(
     rotate: [40, 40, 10, 20, 20, 10, 40, 10],
   }
 );
+
+// Highlight
+gsap.utils.toArray("span").forEach((span) => {
+  ScrollTrigger.create({
+    trigger: span,
+    start: "top 70%",
+    onEnter: () => span.classList.add("active"),
+  });
+});
