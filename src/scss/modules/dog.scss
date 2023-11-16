@@ -1,10 +1,51 @@
-.cookie-slide {
+.cookie-slider {
   position: relative;
+  padding-bottom: 100vh;
 }
 
 .dog {
   position: absolute;
-  width: 100px;
+  width: 20vw;
+  max-width: 250px;
   top: 350px;
   left: 30px;
+  z-index: 0;
+}
+
+.cookie-slider .deco {
+  height: 100px;
+}
+
+.cookie-slider .text-section {
+  margin-bottom: 50vh;
+  z-index: 1;
+}
+
+.cookie-slide {
+  position: absolute;
+  width: 15vw;
+  animation: cookie-rotate 3s linear infinite;
+}
+
+.cookie-good-1 {
+  right: 5vw;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .dog {
+    top: 500px;
+  }
+}
+
+@keyframes cookie-rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
 }

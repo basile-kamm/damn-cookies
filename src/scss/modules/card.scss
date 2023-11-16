@@ -112,7 +112,7 @@
 //media queries
 @media (max-width: 767px) {
   .dog-on-card {
-    width: 180px;
+    width: 150px;
     left: 60px;
     top: 2px;
   }
@@ -120,6 +120,10 @@
   .card p {
     font-size: 20px;
     padding: 0 10px;
+  }
+
+  .card:first-of-type {
+    margin-top: 40px;
   }
 }
 

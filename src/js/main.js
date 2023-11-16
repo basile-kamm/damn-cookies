@@ -116,3 +116,29 @@ gsap.utils.toArray("span").forEach((span) => {
     onEnter: () => span.classList.add("active"),
   });
 });
+
+// Dog
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".dog",
+    markers: true,
+    start: "top 50%",
+    endTrigger: ".cookie-slider",
+    end: "bottom bottom",
+    scrub: 1,
+    pin: ".dog",
+  },
+});
+
+tl.to(".dog", { x: "70vw", duration: 1.2 })
+  .to(".dog", { rotationY: 180 })
+  .to(".dog", { x: "-5vw", duration: 1.2 })
+  .to(".dog", { rotationY: 0 })
+  .to(".dog", { x: "70vw", duration: 1.2 })
+  .to(".dog", { rotationY: 180 })
+  .to(".dog", { x: "20vw" })
+  .to(".dog", { rotationY: 0 })
+  .to(".dog", { x: "40vw", duration: 0.8 })
+  .to(".dog", { x: "70vw" })
+  .to(".dog", { rotationY: 180 });
