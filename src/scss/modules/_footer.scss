@@ -7,7 +7,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  font-size: 45px;
+  font-size: 35px;
   font-family: playfair-display, serif;
   transition: 0.3s ease-in-out;
   margin-bottom: 5px;
@@ -29,12 +29,12 @@ footer div {
 }
 
 .footer-small {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 footer p {
   font-family: playfair-display, serif;
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -73,6 +73,18 @@ footer p {
 @media (min-width: 768px) {
   footer {
     padding-top: 150px;
+  }
+
+  footer a {
+    font-size: 45px;
+  }
+
+  .footer-small {
+    font-size: 35px;
+  }
+
+  footer p {
+    font-size: 25px;
   }
 }
 

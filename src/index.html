@@ -9,7 +9,9 @@
   </head>
   <body>
     <nav class="header-nav">
-      <h1 class="title">Damn Cookies !</h1>
+      <a href="#header">
+        <h1 class="title">Damn Cookies !</h1>
+      </a>
       <div class="burger-menu">
         <button class="hamburger">
           <div id="bar1" class="bar"></div>
@@ -18,9 +20,9 @@
         </button>
         <nav class="burger-menu-nav">
           <ul>
-            <li><a href="">Facts</a></li>
-            <li><a href="">Adventure</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a href="#facts" class="burger-button">Facts</a></li>
+            <li><a href="#adventure" class="burger-button">Adventure</a></li>
+            <li><a href="#contact" class="burger-button">Contact</a></li>
           </ul>
           <div class="burger-menu-infos">
             <p class="burger-menu-title">Damn Cookies !</p>
@@ -32,7 +34,7 @@
       <div class="burger-background"></div>
       <div class="trigger-element"></div>
     </nav>
-    <header>
+    <header id="header">
       <p class="header-subtitle">A website about cookies in all it’s forms</p>
       <img
         src="img/cookie.png"
@@ -48,7 +50,7 @@
     <main>
       <img src="img/main-background-head.png" alt="" class="background-top" />
       <div class="container">
-        <h2>Before all...</h2>
+        <h2 id="facts">Before all...</h2>
         <div class="row">
           <div class="col-8">
             <div class="text-section">
@@ -244,7 +246,7 @@
             </div>
           </div>
         </div>
-        <div class="cookie-slider">
+        <div class="cookie-slider" id="adventure">
           <h2>It may be unclear for you now, but don’t worry...</h2>
           <img src="img/dog-1.png" alt="" class="dog" />
           <div class="row">
@@ -352,7 +354,7 @@
       <img id="c3" class="footer-cookies" src="img/cookie.png" alt="" />
       <img src="img/transitions.png" alt="" class="transition" />
     </div>
-    <footer>
+    <footer id="contact">
       <h2>Thanks a lot !</h2>
       <div class="footer-links">
         <a href="https://www.instagram.com/zilba_k/" target="_blank">

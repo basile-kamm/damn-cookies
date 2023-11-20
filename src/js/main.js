@@ -52,9 +52,11 @@ gsap.to(".header-nav", {
 // Burger Menu
 const hamburger = document.querySelector(".hamburger");
 const background = document.querySelector(".burger-background");
+const button = document.querySelector(".burger-button");
 
 hamburger.addEventListener("click", show);
 background.addEventListener("click", show);
+button.addEventListener("click", show);
 
 function show() {
   hamburger.classList.toggle("open");

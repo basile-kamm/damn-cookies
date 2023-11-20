@@ -1,6 +1,6 @@
 .cookie-slider {
   position: relative;
-  padding-bottom: 20vh;
+  padding-bottom: 5vh;
 }
 
 .dog {
@@ -23,7 +23,7 @@
 
 .cookie-slide {
   position: absolute;
-  width: 10vw;
+  width: 15vw;
   //animation: cookie-rotate 3s linear infinite;
   transform-origin: top left;
   transition: 0.2s ease-in-out;
@@ -71,6 +71,14 @@
 @media (min-width: 768px) {
   .dog {
     top: 500px;
+  }
+
+  .cookie-slider {
+    padding-bottom: 20vh;
+  }
+
+  .last-one {
+    font-size: 45px;
   }
 }
 
