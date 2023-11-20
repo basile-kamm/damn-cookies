@@ -1,6 +1,6 @@
 .cookie-slider {
   position: relative;
-  padding-bottom: 100vh;
+  padding-bottom: 20vh;
 }
 
 .dog {
@@ -9,7 +9,7 @@
   max-width: 250px;
   top: 350px;
   left: 30px;
-  z-index: 0;
+  z-index: 2;
 }
 
 .cookie-slider .deco {
@@ -23,16 +23,49 @@
 
 .cookie-slide {
   position: absolute;
-  width: 15vw;
-  animation: cookie-rotate 3s linear infinite;
+  width: 10vw;
+  //animation: cookie-rotate 3s linear infinite;
+  transform-origin: top left;
+  transition: 0.2s ease-in-out;
+  z-index: 0;
 }
 
 .cookie-good-1 {
   right: 5vw;
 }
 
+.cookie-good-2 {
+  left: 6vw;
+}
+
+.cookie-bad-1 {
+  right: 5vw;
+  margin-top: 10vh;
+}
+
+.cookie-bad-2 {
+  left: 50vw;
+  margin-top: 110vh;
+}
+
+.cookie-bad-3 {
+  left: 25vw;
+  margin-top: 70vh;
+}
+
+.space {
+  height: 105vh;
+}
+
+.last-one {
+  padding-right: 20vw;
+  font-size: 35px;
+  margin-bottom: 20vh;
+}
+
 .invisible {
-  display: none;
+  width: 0;
+  opacity: 0;
 }
 
 @media (min-width: 768px) {

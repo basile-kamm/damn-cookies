@@ -3,7 +3,7 @@
 // ==================================== */
 
 :root {
-  --light: #fff4cf;
+  --light: rgba(255, 244, 207, 1);
   --dark-green: #1c3818;
   --light-green: #84ad5f;
   --brown: #301c09;
@@ -21,6 +21,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -122,9 +122,9 @@ gsap.utils.toArray("span").forEach((span) => {
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".dog",
-    markers: true,
+    markers: false,
     start: "top 50%",
-    endTrigger: ".cookie-slider",
+    endTrigger: ".last-one",
     end: "bottom bottom",
     scrub: 1,
     pin: ".dog",
@@ -135,10 +135,68 @@ tl.to(".dog", { x: "70vw", duration: 1.2 })
   .to(".dog", { rotationY: 180 })
   .to(".dog", { x: "-5vw", duration: 1.2 })
   .to(".dog", { rotationY: 0 })
-  .to(".dog", { x: "70vw", duration: 1.2 })
+  .to(".dog", { x: "70vw", duration: 1.4 })
   .to(".dog", { rotationY: 180 })
   .to(".dog", { x: "20vw" })
   .to(".dog", { rotationY: 0 })
   .to(".dog", { x: "40vw", duration: 0.8 })
   .to(".dog", { x: "70vw" })
   .to(".dog", { rotationY: 180 });
+
+gsap.to(".cookie-good-1", {
+  y: "-5vh",
+  scrollTrigger: {
+    trigger: ".cookie-slide",
+    start: "top bottom",
+    end: "top 70%",
+    scrub: true,
+    onLeave: () => {
+      document.querySelector(".cookie-good-1").classList.add("invisible");
+    },
+  },
+});
+
+gsap.to(".cookie-good-2", {
+  y: "-5vh",
+  scrollTrigger: {
+    trigger: ".cookie-good-2",
+    start: "top bottom",
+    end: "top 70%",
+    scrub: true,
+    onLeave: () => {
+      document.querySelector(".cookie-good-2").classList.add("invisible");
+    },
+  },
+});
+
+gsap.to(".cookie-bad-1", {
+  y: "-100vh",
+  scrollTrigger: {
+    trigger: ".cookie-bad-1",
+    start: "top 90%",
+    end: "top top",
+    scrub: true,
+  },
+});
+
+gsap.to(".cookie-bad-2", {
+  y: "-100vh",
+  scrollTrigger: {
+    trigger: ".cookie-bad-2",
+    start: "top 90%",
+    end: "top top",
+    markers: true,
+    scrub: true,
+  },
+});
+
+gsap.to(".cookie-bad-3", {
+  y: "-100vh",
+  scrollTrigger: {
+    trigger: ".cookie-bad-3",
+    start: "top 90%",
+    end: "top top",
+    markers: true,
+    scrub: true,
+  },
+});
