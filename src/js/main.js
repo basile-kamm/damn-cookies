@@ -187,7 +187,6 @@ gsap.to(".cookie-bad-2", {
     trigger: ".cookie-bad-2",
     start: "top 90%",
     end: "top top",
-    markers: true,
     scrub: true,
   },
 });
@@ -198,7 +197,6 @@ gsap.to(".cookie-bad-3", {
     trigger: ".cookie-bad-3",
     start: "top 90%",
     end: "top top",
-    markers: true,
     scrub: true,
   },
 });
