@@ -19,6 +19,11 @@
   padding: 0;
 }
 
+*::selection {
+  background: #648448ad;
+  color: var(--light);
+}
+
 html {
   font-size: 16px;
 }
@@ -43,6 +48,7 @@ video {
   block-size: auto;
   vertical-align: middle;
   -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 /* ====================================

@@ -116,6 +116,7 @@ gsap.utils.toArray("span").forEach((span) => {
     trigger: span,
     start: "top 70%",
     onEnter: () => span.classList.add("active"),
+    onLeaveBack: () => span.classList.remove("active"),
   });
 });
 
