@@ -64,27 +64,6 @@ function show() {
   background.classList.toggle("active");
 }
 
-//Letter
-// const letter = document.querySelector(".absolute-letter");
-
-// letter.addEventListener("click", open);
-
-// function open() {
-//   document.querySelector(".closed-letter").classList.toggle("closed");
-//   document.querySelector(".open-letter").classList.toggle("open");
-// }
-
-// gsap.to(".absolute-letter", {
-//   x: "-35%",
-//   scrollTrigger: {
-//     trigger: ".so-what",
-//     start: "bottom center",
-//     end: "bottom 30%",
-//     scrub: true,
-//     markers: true,
-//   },
-// });
-
 // Cookies Manager
 
 gsap.to(
@@ -114,7 +93,8 @@ gsap.to(
 gsap.utils.toArray("span").forEach((span) => {
   ScrollTrigger.create({
     trigger: span,
-    start: "top 70%",
+    markers: true,
+    start: "top 80%",
     onEnter: () => span.classList.add("active"),
     onLeaveBack: () => span.classList.remove("active"),
   });

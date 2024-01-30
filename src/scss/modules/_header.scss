@@ -3,8 +3,8 @@ body {
 }
 
 header {
+  background: var(--dark-green);
   background-image: url(../img/header-banner.webp);
-
   background-size: cover;
   height: 105vh;
   text-align: center;
