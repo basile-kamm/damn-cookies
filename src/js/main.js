@@ -93,8 +93,8 @@ gsap.to(
 gsap.utils.toArray("span").forEach((span) => {
   ScrollTrigger.create({
     trigger: span,
-    markers: true,
     start: "top 80%",
+    markers: false,
     onEnter: () => span.classList.add("active"),
     onLeaveBack: () => span.classList.remove("active"),
   });

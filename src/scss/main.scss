@@ -1,11 +1,11 @@
 @import "base";
 @import "layout";
-@import "./modules/header";
-@import "./modules/burger-menu";
-@import "./modules/text-section.scss";
-@import "./modules/card.scss";
-@import "./z-index.scss";
-@import "./modules/dog.scss";
-@import "./modules/footer";
+@import "modules/header";
+@import "modules/burger-menu";
+@import "modules/text-section";
+@import "modules/card";
+@import "z-index";
+@import "modules/dog";
+@import "modules/footer";
 
 @import "bootstrap/scss/bootstrap-grid";
